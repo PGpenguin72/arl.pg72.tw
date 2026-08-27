@@ -13,7 +13,7 @@ for (const category of categories) {
   const start = text.indexOf(category + '題庫\n', questionStart);
   const next = categories.map(c => text.indexOf(c + '題庫\n', start + category.length)).filter(i => i > start).sort((a,b) => a-b)[0] ?? text.length;
   const section = text.slice(start, next);
-  const matches = [...section.matchAll(/(?:^|\n)\s*[（(]\s*([1-4])\s*[）)]\s*(\d+)\.\s*/g)];
+  const matches = [...section.matchAll(/(?:^|\n)\s*[（(]\s*([1-4])\s*[）)]\s*(\d+)\.\s+/g)];
   for (let i=0; i<matches.length; i++) {
     const m=matches[i], block=section.slice(m.index + m[0].length, matches[i+1]?.index ?? section.length).trim();
     const options=[];
