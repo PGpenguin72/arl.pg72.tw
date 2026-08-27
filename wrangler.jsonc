@@ -1,7 +1,7 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	"name": "arl-pg72-tw",
-	"account_id": "0c14851f9de33424941bdc1b4802ec83",
+  "account_id": "9e1e36d2ce92a214f3e9dbb96b0be9d2",
 	"main": "src/worker.ts",
 	"compatibility_date": "2026-08-27",
 	"compatibility_flags": [
@@ -15,7 +15,7 @@
 		{
 			"binding": "DB",
 			"database_name": "arl-pg72-tw",
-			"database_id": "67223250-fe6c-4da5-99fa-ba7a27838350"
+			"database_id": "52f4dd6a-e808-47da-9667-46da36b039a4"
 		}
 	],
 	"vars": {
