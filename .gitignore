@@ -4,3 +4,4 @@ node_modules/
 .env
 dist/
 worker-configuration.d.ts
+tmp-level3.sql
