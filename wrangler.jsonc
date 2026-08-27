@@ -1,10 +1,25 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "arl-pg72-tw",
-  "main": "src/worker.ts",
-  "compatibility_date": "2026-08-27",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": { "directory": "pages", "binding": "ASSETS" },
-  "d1_databases": [{ "binding": "DB", "database_name": "arl-pg72-tw", "database_id": "REPLACE_WITH_D1_DATABASE_ID" }],
-  "vars": { "OIDC_ISSUER": "https://sso.pg72.tw", "GEMINI_MODEL": "gemini-2.5-flash" }
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "arl-pg72-tw",
+	"account_id": "0c14851f9de33424941bdc1b4802ec83",
+	"main": "src/worker.ts",
+	"compatibility_date": "2026-08-27",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"assets": {
+		"directory": "pages",
+		"binding": "ASSETS"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "arl-pg72-tw",
+			"database_id": "67223250-fe6c-4da5-99fa-ba7a27838350"
+		}
+	],
+	"vars": {
+		"OIDC_ISSUER": "https://sso.pg72.tw",
+		"GEMINI_MODEL": "gemini-2.5-flash"
+	}
 }
